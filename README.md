@@ -41,6 +41,9 @@ GitHub: https://github.com/abuzaransaridev
 
 LinkedIn: https://www.linkedin.com/in/abuzar-ansari-dev/
 
+🌐 Live Demo:
+https://spotify-colne-six.vercel.app/
+
 ## Disclaimer
 
 This project is made for learning and practice purposes only. It is not an official Spotify website.
