@@ -1,1631 +1,573 @@
 <!DOCTYPE HTML>
 <html>
+	<head>
 
-<head>
+		<title>Spotify Clone</title>
 
-    <title>Spotify Clone</title>
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"rel="stylesheet">
 
-    <!-- Remix Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	  
+		<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		
+		<link rel="icon"href="https://static.vecteezy.com/system/resources/previews/023/986/728/non_2x/spotify-logo-spotify-logo-transparent-spotify-icon-transparent-free-free-png.png">
+		<link rel="stylesheet" href="explore_prem.css">
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<div class="n_logo">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+					<img
+						alt="spotify-logo"
+						height="33"
+						width="33"
+						src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+				</div>
+				<div class="home_logo">
 
-    <!-- Favicon -->
-    <link rel="icon"href="https://static.vecteezy.com/system/resources/previews/023/986/728/non_2x/spotify-logo-spotify-logo-transparent-spotify-icon-transparent-free-free-png.png">
-    <style>
+					<a href="index.html">
 
-        * {
-            box-sizing: border-box;
-        }
+						<i class="ri-home-5-fill"></i>
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-        }
-        nav {
-            width: 100%;
-            background-color: #000000;
+					</a>
 
-            display: flex;
-            align-items: center;
+				</div>
 
-            padding: 0.5%;
-        }
+				<div class="input_box">
 
-        .n_logo {
-            padding: 10px 0;
-            margin-left: 2%;
-        }
+					<div class="search">
 
-        .home_logo {
-            border-radius: 100%;
-            background-color: #2A2A2A;
+						<i class="ri-search-line"></i>
 
-            padding: 10px;
-            margin-left: 6%;
+					</div>
 
-            font-size: 24px;
-            color: white;
-        }
+					<input
+						class="input"
+						type="text"
+						placeholder=" What do you want to play? ">
 
-        .home_logo a {
-            text-decoration: none;
-            color: white;
-        }
+					<div class="divider"></div>
 
-        .home_logo a:hover {
-            color: white;
-        }
-        .input_box {
-            width: 40%;
+					<div class="search folder_hover">
 
-            background-color: #1F1F1F;
+						<a href="browser.html">
+							<i class="ri-folder-open-line"></i>
+						</a>
 
-            display: flex;
-            align-items: center;
+					</div>
 
-            border-radius: 30px;
+				</div>
 
-            margin-left: 1%;
-        }
+				<div class="pre">
 
-        .input_box:hover {
-            background-color: #2A2A2A;
-        }
+					<a href="#">
 
-        .search {
-            padding: 10px;
+						<b>Explore Premium</b>
 
-            font-size: 24px;
-            color: #B3B3B3;
+					</a>
 
-            display: flex;
-            align-items: center;
-        }
+				</div>
+				
+				<div class="hover_white pres">
 
-        .search a {
-            color: #B3B3B3;
-            text-decoration: none;
-        }
+					<a href="explore_prem.html">
 
-        .input {
-            height: 40px;
-            width: 80%;
+						<b>Install App</b>
 
-            padding-left: 2%;
+					</a>
 
-            background-color: #1F1F1F;
+				</div>
 
-            border: none;
+				<div class="press hover_white">
 
-            font-size: 17px;
-            color: #1ED760;
+					<a href="#">
 
-            outline: none;
-        }
+						<i class="ri-notification-4-line"></i>
 
-        .input::placeholder {
-            color: #B3B3B3;
-        }
+					</a>
 
-        .divider {
-            border-left: 1px solid #5A5A5A;
-            height: 25px;
-        }
+				</div>
 
+				<div class="press hover_white">
 
-        /* Navbar links */
+					<a href="#">
 
-        .hover_white a {
-            text-decoration: none;
-            color: #B3B3B3;
-        }
+						<i class="ri-team-fill"></i>
 
-        .hover_white a:hover {
-            color: white;
-        }
+					</a>
 
-        .pre {
-            padding: 8px 10px;
+				</div>
 
-            background-color: white;
+				<div class="presss">
 
-            border-radius: 30px;
+					<b>A</b>
 
-            font-size: 15px;
+				</div>
 
-            margin-left: 6%;
+			</nav>
 
-            color: black;
-        }
+		</header>
+		
+		<main>
 
-        .pre a {
-            text-decoration: none;
-            color: black;
-        }
+			<aside class="left-aside">
 
-        .pre a:hover,
-        .pre:hover {
-            color: #1F1F1F;
-            background-color: #D9D9D9;
-        }
+				<div class="left_heading">
 
-        .pres {
-            color: #B3B3B3;
+					<span>
+						Your Library
+					</span>
 
-            padding: 5px;
+					<div class="plus_icon hover_white">
+						<a href="#">
+							<i class="ri-add-large-line"></i>
+						</a>
+					</div>
 
-            font-size: 16px;
+				</div>
 
-            margin-left: 2%;
-        }
+				<div class="left-aside-grid">
 
-        .press {
-            color: #B3B3B3;
+					<div class="left_grid1">
 
-            padding: 3px;
+						<h4>
+							Create your first playlist
+						</h4>
 
-            font-size: 20px;
+						<span>
+							It's easy, we'll help you
+						</span>
 
-            margin-left: 2%;
-        }
+						<div class="butn_area">
 
-        .presss {
-            color: white;
+							<button class="creat_play_list_btn">
+								Create playlist
+							</button>
 
-            width: 35px;
-            height: 35px;
+						</div>
 
-            border-radius: 50%;
+					</div>
+					
+					<div class="left_grid1">
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+						<h4>
+							Let's find some podcasts to follow
+						</h4>
 
-            font-size: 16px;
+						<span>
+							We'll keep you updated on new episodes
+						</span>
 
-            margin-left: 2%;
+						<div class="butn_area">
 
-            background-color: #1ED760;
-        }
+							<button class="creat_play_list_btn">
+								Browse podcasts
+							</button>
 
+						</div>
 
-        /* =========================
-           MAIN LAYOUT
-        ========================= */
+					</div>
 
-        main {
-            padding: 0.5%;
+				</div>
 
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+			</aside>
+			<section class="main_section">
 
-            gap: 0.7%;
-        }
-        .left-aside {
-            width: 22%;
-            height: 460px;
+				<div class="overflow_box">
+					<div class="search_area">
 
-            background-color: #121212;
+						<div class="explore_prem">
 
-            border-radius: 10px;
+							<b class="bold1">
 
-            color: white;
-        }
+								Get 12 months of Premium Standard at ₹799
 
-        .left-aside-grid {
-            display: grid;
+							</b>
 
-            padding: 8% 3%;
+							<b class="bold2">
 
-            grid-template-columns: auto;
+								Equivalent to ₹66.59/month. Limited time offer.
 
-            gap: 20px;
-        }
+							</b>
 
-        .left_grid1 {
-            background-color: #1F1F1F;
+							<b class="bold3">
 
-            color: white;
+								Enjoy ad-free music listening with Spotify Premium Standard.
 
-            border-radius: 10px;
+							</b>
 
-            min-height: 150px;
+							<b class="b5">
+								Get Premium Standard
+							</b>
 
-            padding: 0 5%;
+							<b class="b6">
+								View all plans
+							</b>
 
-            font-size: 14px;
-        }
+							<b class="b7">
+								Limited time offer. Limited Eligibility.
+								<u class="hover_white">Terms Apply.</u>
+							</b>
 
-        .left_heading {
-            display: flex;
+						</div>
 
-            justify-content: space-between;
-            align-items: center;
+						<b class="b8">
 
-            padding: 10% 3%;
+							Choose the Premium plan that’s right for you.
+							<br>
+							You’ve got options.
 
-            font-weight: 550;
-        }
+						</b>
+						
+						<b class="b9">
 
-        .plus_icon {
-            height: 30px;
-            width: 30px;
+							Choose a Premium plan and listen to the podcasts
+							and ad-free music you want,
+							<br>
+							when you want.
+							<br>
+							Pay in various ways. Cancel anytime.
 
-            border-radius: 100%;
+						</b>
 
-            font-size: 25px;
+					</div>
+					
+					<footer class="footer2">
 
-            display: flex;
+						<div class="coloumns_area">
+						
+							<div class="column1">
 
-            align-items: center;
-            justify-content: center;
+								<h5>
+									Company
+								</h5>
 
-            color: #B3B3B3;
+								<ul>
 
-            background-color: #2A2A2A;
-        }
+									<li>
+										<a href="#">About</a>
+									</li>
 
-        .plus_icon a {
-            color: #B3B3B3;
-        }
+									<li>
+										<a href="#">Jobs</a>
+									</li>
 
-        .butn_area {
-            padding: 10px;
-            margin-top: 10px;
-        }
+									<li>
+										<a href="#">For the Record</a>
+									</li>
 
-        .creat_play_list_btn {
-            padding: 4%;
+								</ul>
 
-            background-color: white;
+							</div>
+							
+							<div class="column1">
 
-            border: none;
+								<h5>
+									Communities
+								</h5>
 
-            border-radius: 15px;
+								<ul>
 
-            font-weight: 550;
+									<li>
+										<a href="#">For Artists</a>
+									</li>
 
-            cursor: pointer;
-        }
+									<li>
+										<a href="#">Developers</a>
+									</li>
 
-        .creat_play_list_btn:hover {
-            background-color: #D9D9D9;
-        }
+									<li>
+										<a href="#">Advertising</a>
+									</li>
 
+									<li>
+										<a href="#">Investors</a>
+									</li>
 
-        /* =========================
-           CENTER SECTION
-        ========================= */
+									<li>
+										<a href="#">Vendors</a>
+									</li>
 
-        .main_section {
-            width: 55%;
+								</ul>
 
-            background-color: #121212;
+							</div>
 
-            border-radius: 10px;
+							<div class="column1">
 
-            height: 460px;
+								<h5>
+									Useful links
+								</h5>
 
-            overflow-x: hidden;
-            overflow-y: scroll;
+								<ul>
 
-            display: flex;
+									<li>
+										<a href="#">Support</a>
+									</li>
 
-            justify-content: center;
-        }
+									<li>
+										<a href="#">Free Mobile App</a>
+									</li>
 
-        .main_section::-webkit-scrollbar {
-            width: 8px;
-        }
+									<li>
+										<a href="#">Popular by Country</a>
+									</li>
 
-        .main_section::-webkit-scrollbar-track {
-            border-radius: 10px;
-        }
+									<li>
+										<a href="#">Import your music</a>
+									</li>
 
-        .main_section::-webkit-scrollbar-thumb {
-            background-color: #898989;
+								</ul>
 
-            border-radius: 10px;
+							</div>
 
-            width: 20px;
-        }
+							<div class="column1">
 
-        .overflow_box {
-            width: 100%;
+								<h5>
+									Spotify Plans
+								</h5>
 
-            position: relative;
+								<ul>
 
-            background-color: #121212;
-        }
+									<li>
+										<a href="#">Premium Individual</a>
+									</li>
 
-        .main_containt_box {
-            width: 100%;
+									<li>
+										<a href="#">Premium Duo</a>
+									</li>
 
-            position: relative;
+									<li>
+										<a href="#">Premium Family</a>
+									</li>
 
-            background-color: #121212;
-        }
+									<li>
+										<a href="#">Premium Student</a>
+									</li>
 
-        .all_area {
-            width: 100%;
+									<li>
+										<a href="#">Spotify Free</a>
+									</li>
 
-            display: flex;
+								</ul>
 
-            position: sticky;
+							</div>
 
-            top: 0;
-        }
+							<div class="column1">
 
-        .music_area {
-            display: flex;
+								<div class="social-links">
 
-            align-items: center;
-            justify-content: space-between;
+									<a href="#">
 
-            width: 33%;
-        }
+										<div>
 
-        .all_box1 {
-            background-color: #2A2A2A;
+											<i class="fa-brands fa-linkedin"></i>
 
-            padding: 4%;
+										</div>
 
-            border-radius: 20px;
+									</a>
 
-            color: white;
-        }
+									<a href="#">
 
-        .main_box {
-            padding: 0% 8%;
-        }
+										<div>
 
-        .top_two {
-            width: 100%;
+											<i class="fa-brands fa-instagram"></i>
 
-            display: flex;
+										</div>
 
-            gap: 4%;
-        }
+									</a>
 
-        .box_one {
-            width: 48%;
+									<a href="#">
 
-            background-color: #1F1F1F;
+										<div>
 
-            height: 50px;
+											<i class="fa-brands fa-facebook-f"></i>
 
-            display: flex;
+										</div>
 
-            align-items: center;
+									</a>
 
-            font-weight: 550;
+								</div>
 
-            font-size: 14px;
+							</div>
 
-            color: white;
-        }
+						</div>
 
-        .main_img {
-            width: 50px;
-            height: 50px;
+						<hr class="hr-line">
 
-            margin-right: 5px;
-        }
+						<div class="last_foo">
 
+							<div class="legal_area">
 
-        /* =========================
-           PREMIUM SECTION
-        ========================= */
+								<ul>
 
-        .search_area {
-            padding: 0;
+									<li>
+										<a href="#Legal">
+											Legal
+										</a>
+									</li>
 
-            color: white;
-        }
+									<li>
+										<a href="#Safety">
+											Safety & Privacy Center
+										</a>
+									</li>
 
+									<li>
+										<a href="#Privacy">
+											Privacy Policy
+										</a>
+									</li>
 
-        .explore_prem {
+									<li>
+										<a href="#Cookies">
+											Cookies
+										</a>
+									</li>
 
-            
-			width: 100%;
-            background: linear-gradient(
-                110deg,
-                #A90070,
-                #172F78
-            );
+									<li>
+										<a href="#About">
+											About Ads
+										</a>
+									</li>
 
-            padding: 55px 20px;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            overflow: hidden;
-        }
-        .bold1 {
+									<li>
+										<a href="#Accessibility">
+											Accessibility
+										</a>
+									</li>
 
-            display: block;
+								</ul>
 
-            font-size: 30px;
+							</div>
 
-            font-weight: 550;
+							<div class="copy_right legal_area">
 
-            line-height: 1.9;
+								<ul>
 
-            color: white;
-        }
+									<li>
 
-        .bold2 {
+										<a href="#copy-right">
 
-            display: block;
+											&copy; 2026 Spotify AB
 
-            font-size: 18px;
+										</a>
 
-            font-weight: 500;
+									</li>
 
-            line-height: 1.5;
+								</ul>
 
-            color: white;
-        }
+							</div>
 
-        .bold3 {
+						</div>
 
-            display: block;
+					</footer>
 
-            font-size: 18px;
+				</div>
 
-            font-weight: 500;            
+			</section>
+			
+			<aside class="right_aside">
 
-            margin: 0 0 25px;
+				<div class="scrolling_area">
 
-            color: white;
-        }
+					<div class="right_top_heading">
 
-        .b5 {
+						<span>
+							Tum Dil Ki Dhadkar
+						</span>
 
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 50px;
-            padding: 0 30px;
-            margin: 0 10px;
-            border-radius: 40px;
-            background-color: white;
-            color: black;
+					</div>
 
-            font-size: 16px;
+					<div class="right_img1">
 
-            font-weight: 550;
+						<img
+							class="right_img1"
+							alt="film Photo"
+							width="100%"
+							height="100%"
+							src="https://i.scdn.co/image/ab67616d0000b273f20a8091d4cecdba6003d4ca">
 
-            cursor: pointer;
-        }
+					</div>
 
-        .b5:hover {
-            background-color: #F5F5F5;
-        }
 
-        .b6 {
+					<div class="right_top_heading top1 headind2">
 
-            display: inline-flex;
+						<span>
+							Tum Dil Ki Dhadkan
+						</span>
 
-            align-items: center;
-            justify-content: center;
+						<span class="_2ndheading">
 
-            min-height: 50px;
+							Kumar Sanu, Altaf Raja, Mil
 
-            padding: 0 30px;
+						</span>
 
-            margin: 0 10px;
+					</div>
 
-            border-radius: 40px;
+					<div class="about_artist">
 
-            background-color: transparent;
+						<div class="about_backg grid-items">
 
-            color: white;
+							<div>
 
-            border: 1px solid white;
+								<h4>
+									About the artist
+								</h4>
 
-            font-size: 16px;
+							</div>
 
-            font-weight: 550;
+						</div>
 
-            cursor: pointer;
-        }
+						<div class="discp">
 
-        .b6:hover {
+							<h4>
+								Kumar Sanu
+							</h4>
 
-            background-color: rgba(255,255,255,0.10);
-        }
+							<div class="disp_area1">
 
-        .b7 {
+								<div class="descprition">
 
-            display: block;
+									<div>
+										16,862,259
+									</div>
 
-            margin-top: 48px;
+									<div>
+										monthly listeners
+									</div>
 
-            font-size: 14px;
+								</div>
 
-            color: white;
-        }
+								<div class="follow_button">
 
-        .b8 {
+									<button>
+										Follow
+									</button>
 
-            display: block;
-            font-size: 28px;
-            font-weight: 550;
-            line-height: 1.2;
-            text-align: center;
-            color: white;
-            margin: 50px 20px 15px;
-        }
-        .b9 {
+								</div>
 
-            display: block;
-            font-size: 18px;
-            font-weight: 400;
+							</div>
 
-            line-height: 1.4;
+							<div class="descprition gap">
 
-            text-align: center;
+								<span>
 
-            color: white;
+									Kumar Sanu (b. October 20th 1957)
+									is one of the most popular and prolific
+									singers in Bollywood...
 
-            margin: 0 20px;
-        }
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</main>	
+		<footer class="footer">
 
-        .footer2 {
-
-            background-color: #121212;
-
-            width: 100%;
-        }
-
-        .coloumns_area {
-
-            display: flex;
-
-            justify-content: space-between;
-
-            background-color: #121212;
-
-            padding: 20px;
-        }
-
-        .column1 {
-
-            background-color: transparent;
-
-            display: flex;
-
-            flex-direction: column;
-
-            width: 16%;
-        }
-
-        .column1 h5,
-        .right_top_heading {
-
-            font-size: 16px;
-
-            font-weight: 700;
-
-            margin-bottom: 18px;
-
-            color: #FFFFFF;
-        }
-
-        .column1 ul {
-
-            list-style: none;
-
-            background-color: transparent;
-
-            padding: 0;
-        }
-
-        .column1 ul li {
-
-            margin-bottom: 15px;
-        }
-
-        .column1 ul li a {
-
-            text-decoration: none;
-
-            color: #B3B3B3;
-
-            font-weight: 500;
-
-            font-size: 15px;
-        }
-
-        .column1 ul li a:hover {
-
-            color: #FFFFFF;
-        }
-
-
-        /* Social links */
-
-        .social-links {
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            gap: 12px;
-        }
-
-        .social-links a {
-
-            color: white;
-
-            font-size: 20px;
-
-            text-decoration: none;
-        }
-
-        .social-links div {
-
-            background-color: #2A2A2A;
-
-            width: 35px;
-            height: 35px;
-
-            border-radius: 100%;
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            margin-top: 25px;
-        }
-
-        .social-links div:hover {
-
-            background-color: #727272;
-        }
-
-
-        /* Horizontal line */
-
-        .hr-line {
-
-            margin: 0% 3%;
-
-            border: 1px solid #292929;
-        }
-
-
-        /* Last footer */
-
-        .last_foo {
-
-            display: flex;
-        }
-
-        .legal_area {
-
-            width: 75%;
-        }
-
-        .legal_area ul {
-
-            list-style: none;
-
-            display: flex;
-
-            align-items: center;
-
-            flex-wrap: wrap;
-
-            gap: 10px;
-
-            padding: 0% 3%;
-        }
-
-        .legal_area ul li a {
-
-            text-decoration: none;
-
-            color: #B3B3B3;
-        }
-
-        .legal_area ul li a:hover {
-
-            color: #FFFFFF;
-        }
-
-        .copy_right {
-
-            width: 30%;
-
-            display: flex;
-
-            align-items: flex-start;
-
-            justify-content: flex-end;
-
-            padding-right: 2%;
-        }
-
-
-        /* Bottom footer */
-
-        .footer {
-
-            background-color: #000000;
-
-            border-top: 1px solid #2A2A2A;
-
-            width: 100%;
-
-            height: 50px;
-        }
-
-
-        /* =========================
-           RIGHT ASIDE
-        ========================= */
-
-        .right_aside {
-
-            width: 22%;
-
-            height: 460px;
-
-            background-color: #121212;
-
-            border-radius: 10px;
-
-            overflow-x: hidden;
-
-            overflow-y: scroll;
-        }
-
-        .right_aside::-webkit-scrollbar {
-
-            width: 8px;
-        }
-
-        .right_aside::-webkit-scrollbar-track {
-
-            border-radius: 10px;
-        }
-
-        .right_aside::-webkit-scrollbar-thumb {
-
-            background-color: #898989;
-
-            border-radius: 10px;
-
-            width: 20px;
-        }
-
-        .scrolling_area {
-
-            background-color: #121212;
-
-            padding: 10% 5%;
-        }
-
-        .right_top_heading {
-
-            padding-bottom: 2%;
-        }
-
-        .right_img1 {
-
-            height: 245px;
-
-            border-radius: 10px;
-        }
-
-        ._2ndheading {
-
-            font-size: 14px;
-
-            color: #B3B3B3;
-        }
-
-        .top1 {
-
-            font-size: 24px;
-        }
-
-        .headind2 {
-
-            padding: 5% 0;
-
-            line-height: 20px;
-        }
-
-
-        /* Artist */
-
-        .about_artist {
-
-            background-color: #1F1F1F;
-
-            border-radius: 10px;
-        }
-
-        .about_backg {
-
-            background-image: url(
-                "https://i.scdn.co/image/ab6761670000de4af40deddcf203954086d4c8c3"
-            );
-
-            background-size: cover;
-
-            height: 155px;
-
-            padding-top: 1%;
-            padding-left: 7%;
-
-            color: white;
-
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .grid-items {
-
-            background-color: #1F1F1F;
-        }
-
-        .discp {
-
-            padding: 5%;
-
-            padding-top: 0;
-
-            color: white;
-        }
-
-        .disp_area1 {
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-        }
-
-        .descprition {
-
-            font-size: 15px;
-
-            color: gray;
-        }
-
-        .follow_button button {
-
-            padding: 5px 10px;
-
-            color: white;
-
-            background-color: #121212;
-
-            border: 1px solid white;
-
-            border-radius: 20px;
-
-            font-weight: bold;
-
-            cursor: pointer;
-        }
-
-        .follow_button button:hover {
-
-            background-color: white;
-
-            color: black;
-        }
-
-        .gap {
-
-            margin-top: 15px;
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-    <!-- =========================
-         HEADER / NAVBAR
-    ========================= -->
-
-    <header>
-
-        <nav>
-
-            <!-- Spotify Logo -->
-
-            <div class="n_logo">
-
-                <img
-                    alt="spotify-logo"
-                    height="33"
-                    width="33"
-                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png">
-
-            </div>
-
-
-            <!-- Home -->
-
-            <div class="home_logo">
-
-                <a href="index.html">
-
-                    <i class="ri-home-5-fill"></i>
-
-                </a>
-
-            </div>
-
-
-            <!-- Search -->
-
-            <div class="input_box">
-
-                <div class="search">
-
-                    <i class="ri-search-line"></i>
-
-                </div>
-
-                <input
-                    class="input"
-                    type="text"
-                    placeholder=" What do you want to play? ">
-
-                <div class="divider"></div>
-
-                <div class="search">
-
-                    <a href="browser.html">
-                        <i class="ri-folder-open-line"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Premium -->
-
-            <div class="pre">
-
-                <a href="#">
-
-                    <b>Explore Premium</b>
-
-                </a>
-
-            </div>
-
-
-            <!-- Install -->
-
-            <div class="hover_white pres">
-
-                <a href="explore_prem.html">
-
-                    <b>Install App</b>
-
-                </a>
-
-            </div>
-
-
-            <!-- Notification -->
-
-            <div class="press hover_white">
-
-                <a href="#">
-
-                    <i class="ri-notification-4-line"></i>
-
-                </a>
-
-            </div>
-
-
-            <!-- Friends -->
-
-            <div class="press hover_white">
-
-                <a href="#">
-
-                    <i class="ri-team-fill"></i>
-
-                </a>
-
-            </div>
-
-
-            <!-- Profile -->
-
-            <div class="presss">
-
-                <b>A</b>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-
-    <!-- =========================
-         MAIN
-    ========================= -->
-
-    <main>
-
-
-        <!-- =========================
-             LEFT SIDEBAR
-        ========================= -->
-
-        <aside class="left-aside">
-
-            <div class="left_heading">
-
-                <span>
-                    Your Library
-                </span>
-
-                <div class="plus_icon hover_white">
-
-                    <a href="#">
-
-                        <i class="ri-add-large-line"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="left-aside-grid">
-
-
-                <!-- Playlist -->
-
-                <div class="left_grid1">
-
-                    <h4>
-                        Create your first playlist
-                    </h4>
-
-                    <span>
-                        It's easy, we'll help you
-                    </span>
-
-                    <div class="butn_area">
-
-                        <button class="creat_play_list_btn">
-
-                            Create playlist
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Podcasts -->
-
-                <div class="left_grid1">
-
-                    <h4>
-                        Let's find some podcasts to follow
-                    </h4>
-
-                    <span>
-                        We'll keep you updated on new episodes
-                    </span>
-
-                    <div class="butn_area">
-
-                        <button class="creat_play_list_btn">
-
-                            Browse podcasts
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </aside>
-        <section class="main_section">
-
-            <div class="overflow_box">
-                <div class="search_area">
-
-                    <div class="explore_prem">
-
-
-                        <b class="bold1">
-
-                            Get 12 months of Premium Standard at ₹799
-
-                        </b>
-
-
-                        <b class="bold2">
-
-                            Equivalent to ₹66.59/month. Limited time offer.
-
-                        </b>
-
-
-                        <b class="bold3">
-
-                            Enjoy ad-free music listening with Spotify Premium Standard.
-
-                        </b>
-
-
-                        <b class="b5">
-
-                            Get Premium Standard
-
-                        </b>
-
-
-                        <b class="b6">
-
-                            View all plans
-
-                        </b>
-
-
-                        <b class="b7">
-
-                            Limited time offer. Limited Eligibility.
-                            <u>Terms Apply.</u>
-
-                        </b>
-
-
-                    </div>
-
-
-                    <b class="b8">
-
-                        Choose the Premium plan that’s right for you.
-                        <br>
-                        You’ve got options.
-
-                    </b>
-                    <b class="b9">
-
-                        Choose a Premium plan and listen to the podcasts
-                        and ad-free music you want,
-                        <br>
-                        when you want.
-                        <br>
-                        Pay in various ways. Cancel anytime.
-
-                    </b>
-
-
-                </div>
-                <footer class="footer2">
-
-
-                    <div class="coloumns_area">
-
-
-                        <!-- Column 1 -->
-
-                        <div class="column1">
-
-                            <h5>
-                                Company
-                            </h5>
-
-                            <ul>
-
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Jobs</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">For the Record</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-
-                        <!-- Column 2 -->
-
-                        <div class="column1">
-
-                            <h5>
-                                Communities
-                            </h5>
-
-                            <ul>
-
-                                <li>
-                                    <a href="#">For Artists</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Developers</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Advertising</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Investors</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Vendors</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-
-                        <!-- Column 3 -->
-
-                        <div class="column1">
-
-                            <h5>
-                                Useful links
-                            </h5>
-
-                            <ul>
-
-                                <li>
-                                    <a href="#">Support</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Free Mobile App</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Popular by Country</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Import your music</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-
-                        <!-- Column 4 -->
-
-                        <div class="column1">
-
-                            <h5>
-                                Spotify Plans
-                            </h5>
-
-                            <ul>
-
-                                <li>
-                                    <a href="#">Premium Individual</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Premium Duo</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Premium Family</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Premium Student</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Spotify Free</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-
-                        <!-- Social -->
-
-                        <div class="column1">
-
-                            <div class="social-links">
-
-                                <a href="#">
-
-                                    <div>
-
-                                        <i class="fa-brands fa-linkedin"></i>
-
-                                    </div>
-
-                                </a>
-
-
-                                <a href="#">
-
-                                    <div>
-
-                                        <i class="fa-brands fa-instagram"></i>
-
-                                    </div>
-
-                                </a>
-
-
-                                <a href="#">
-
-                                    <div>
-
-                                        <i class="fa-brands fa-facebook-f"></i>
-
-                                    </div>
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <hr class="hr-line">
-
-
-                    <!-- Legal -->
-
-                    <div class="last_foo">
-
-
-                        <div class="legal_area">
-
-                            <ul>
-
-                                <li>
-                                    <a href="#Legal">
-                                        Legal
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#Safety">
-                                        Safety & Privacy Center
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#Privacy">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#Cookies">
-                                        Cookies
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#About">
-                                        About Ads
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#Accessibility">
-                                        Accessibility
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-
-                        <!-- Copyright -->
-
-                        <div class="copy_right legal_area">
-
-                            <ul>
-
-                                <li>
-
-                                    <a href="#copy-right">
-
-                                        &copy; 2026 Spotify AB
-
-                                    </a>
-
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-
-                </footer>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             RIGHT SIDEBAR
-        ========================= -->
-
-        <aside class="right_aside">
-
-            <div class="scrolling_area">
-
-
-                <div class="right_top_heading">
-
-                    <span>
-                        Tum Dil Ki Dhadkar
-                    </span>
-
-                </div>
-
-
-                <div class="right_img1">
-
-                    <img
-                        class="right_img1"
-                        alt="film Photo"
-                        width="100%"
-                        height="100%"
-                        src="https://i.scdn.co/image/ab67616d0000b273f20a8091d4cecdba6003d4ca">
-
-                </div>
-
-
-                <div class="right_top_heading top1 headind2">
-
-                    <span>
-                        Tum Dil Ki Dhadkan
-                    </span>
-
-                    <span class="_2ndheading">
-
-                        Kumar Sanu, Altaf Raja, Mil
-
-                    </span>
-
-                </div>
-
-
-                <!-- Artist -->
-
-                <div class="about_artist">
-
-
-                    <div class="about_backg grid-items">
-
-                        <div>
-
-                            <h4>
-                                About the artist
-                            </h4>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="discp">
-
-
-                        <h4>
-                            Kumar Sanu
-                        </h4>
-
-
-                        <div class="disp_area1">
-
-
-                            <div class="descprition">
-
-                                <div>
-                                    16,862,259
-                                </div>
-
-                                <div>
-                                    monthly listeners
-                                </div>
-
-                            </div>
-
-
-                            <div class="follow_button">
-
-                                <button>
-                                    Follow
-                                </button>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="descprition gap">
-
-                            <span>
-
-                                Kumar Sanu (b. October 20th 1957)
-                                is one of the most popular and prolific
-                                singers in Bollywood...
-
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </aside>
-
-
-    </main>
-
-    <footer class="footer">
-
-    </footer>
-
-
-</body>
-
+		</footer>
+	</body>
 </html>
